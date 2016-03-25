@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    {% include head.html %}
+    <body>
+        {% include header.html %}
+        <div id="content">
+            <article role="main">
+                {% include carousel.html %}
+                <section id="just-intro">
+                    <div class="container">
+                        <div class="row text-center pad-row">
+                            {{ content }}
+                        </div>
+                    </div>
+                </section>
+            </article>
+        </div>
+        {% include footer.html %}
+    </body>
+</html>
