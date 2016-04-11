@@ -1,15 +1,16 @@
 #
-# Pretty basic httpd
+# Pretty basic nginx
 #
 
 # Pull base image
-FROM httpd:2.4
+FROM nginx:mainline-alpine
 
-#COPY files/www.worldofnic.org/_site /usr/local/apache2/htdocs/
-#COPY files/conf /usr/local/apache2/conf
-#COPY files/certificates /usr/local/apache2/conf
+RUN mkdir /etc/ssl/nginx && \
+    rm -f /etc/nginx/conf.d/default.conf
 
-MKDIR /usr/local/apache2/certificates
+COPY files/www.worldofnic.org/_site /usr/share/nginx/html/
+COPY files/etc/nginx                /etc/nginx/
+COPY files/etc/ssl/nginx            /etc/ssl/nginx/
 
 EXPOSE 80
 EXPOSE 443
