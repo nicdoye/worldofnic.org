@@ -1,0 +1,38 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: worldofnic-svc
+  labels:
+    app: worldofnic
+spec:
+  type: LoadBalancer
+  ports:
+  - port: 80
+    protocol: TCP
+    name: http
+  - port: 443
+    protocol: TCP
+    name: https
+  selector:
+    app: worldofnic-web
+  loadBalancerIP: 146.148.26.37
+---
+apiVersion: v1
+kind: ReplicationController
+metadata:
+  name: worldofnic-rc
+spec:
+  replicas: 3
+  template:
+    metadata:
+      labels:
+        app: worldofnic-web
+    spec:
+      containers:
+      -
+        name: worldofnic-web-server
+        image: eu.gcr.io/worldofnic-production/worldofnic-jekyll
+        imagePullPolicy: IfNotPresent
+        ports:
+        - containerPort: 80
+        - containerPort: 443
