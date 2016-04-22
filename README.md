@@ -90,10 +90,10 @@ git push
 
 ```bash
 popd
-cd ..
+docker build --tag=eu.gcr.io/worldofnic-production/worldofnic:v2.0.0 \ --tag=eu.gcr.io/worldofnic-production/worldofnic --no-cache --pull .
 docker build --no-cache --pull jekyll-www.worldofnic.org
-docker tag 15224569025f eu.gcr.io/worldofnic-production/worldofnic-jekyll:v1.0.2
-docker tag 15224569025f eu.gcr.io/worldofnic-production/worldofnic-jekyll:latest
+# test locally
+docker run -d -p 8091:80 -p 8092:443 --name hugo eu.gcr.io/worldofnic-production/worldofnic
 gcloud docker push eu.gcr.io/worldofnic-production/worldofnic-jekyll:v1.0.2
 gcloud docker push eu.gcr.io/worldofnic-production/worldofnic-jekyll:latest
 ```
