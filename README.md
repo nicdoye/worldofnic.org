@@ -103,3 +103,5 @@ gcloud docker push eu.gcr.io/worldofnic-production/worldofnic-jekyll:latest
 ```bash
 kubectl rolling-update frontend --image=eu.gcr.io/worldofnic-production/worldofnic-jekyll:v1.0.2
 ```
+
+More complicated upgrades would involve creating a new YAML file like `rc-rollingupdate.yaml` with just the image in the RC.
