@@ -6,7 +6,7 @@ title: Geekery/Open Source
 
 #### Languages
 
-I like Ruby, Groovy and C#, but have but have most experience in the line-noise that is Perl. I'm a big fan of Dependency Injection and will introduce Microsoft Unity into any .NET project at the drop of a hat.
+I like Ruby, Groovy and C#, but have but have most experience in the line-noise that is Perl. I'm a big fan of Dependency Injection and will introduce Microsoft Unity into any .NET project at the drop of a hat. Recently, I've been looking at Go, because I haven't started learning a new language for weeks.
 
 It may not be fashionable, but I'm also rather good at SQL. Don't tell anyone.
 

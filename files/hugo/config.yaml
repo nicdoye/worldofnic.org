@@ -1,0 +1,18 @@
+
+---
+disablePathToLower: true
+languageCode: en-us
+googleAnalytics: UA-34783744-1
+relativeURLs: false
+canonifyURLs: false
+baseurl: "https://www.worldofnic.org/"
+title: "world of nic"
+footnotereturnlinkcontents: "↩"
+disableRSS: "true"
+disable404: "true"
+disableSitemap: "true"
+theme: "stolen-from-somewhere"
+params:
+  Subtitle: "now lower in saturated fats"
+  AuthorName: "Nicolas Doye"
+  GitHubUser: "nicdoye"
