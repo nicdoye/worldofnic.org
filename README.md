@@ -94,8 +94,8 @@ docker build --tag=eu.gcr.io/worldofnic-production/worldofnic:v2.0.0 \ --tag=eu.
 docker build --no-cache --pull jekyll-www.worldofnic.org
 # test locally
 docker run -d -p 8091:80 -p 8092:443 --name hugo eu.gcr.io/worldofnic-production/worldofnic
-gcloud docker push eu.gcr.io/worldofnic-production/worldofnic-jekyll:v1.0.2
-gcloud docker push eu.gcr.io/worldofnic-production/worldofnic-jekyll:latest
+gcloud docker push eu.gcr.io/worldofnic-production/worldofnic:v2.0.0
+gcloud docker push eu.gcr.io/worldofnic-production/worldofnic:latest
 ```
 
 ### Deploy
