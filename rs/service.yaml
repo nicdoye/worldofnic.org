@@ -1,0 +1,20 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: worldofnic-svc
+  labels:
+    app: worldofnic
+    version: 1.0.0
+spec:
+  type: LoadBalancer
+  ports:
+  - port: 80
+    protocol: TCP
+    name: http
+  - port: 443
+    protocol: TCP
+    name: https
+  selector:
+    app: worldofnic-web
+    version: 1.0.0
+  loadBalancerIP: 127.0.0.1

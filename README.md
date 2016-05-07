@@ -98,10 +98,13 @@ gcloud docker push eu.gcr.io/worldofnic-production/worldofnic:v2.0.0
 gcloud docker push eu.gcr.io/worldofnic-production/worldofnic:latest
 ```
 
-### Deploy
+### OLD pre 1.2 Deploy
 
 ```bash
 kubectl rolling-update worldofnic-rc --image=eu.gcr.io/worldofnic-production/worldofnic-jekyll:v1.0.2
 ```
+### YAML files
 
-More complicated upgrades would involve creating a new YAML file like `rc-rollingupdate.yaml` with just the image in the RC.
+* `app.yaml` : Full app for GKE
+* `app.rc.yaml` : top level Redspread YAML. `*.rc.yaml` for rep controllers and `*.pod.yaml` for PODs. Everything else in `rs` folder
+* `app-kubernetes-anywhere.yaml` : For weaveworks kubernetes anywhere (not working)
