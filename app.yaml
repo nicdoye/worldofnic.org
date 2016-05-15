@@ -33,7 +33,7 @@ spec:
     spec:
       containers:
       - name: worldofnic-web-server
-        image: eu.gcr.io/worldofnic-production/worldofnic:2.0.1
+        image: eu.gcr.io/worldofnic-production/worldofnic:latest
         ports:
         - containerPort: 80
         - containerPort: 443
