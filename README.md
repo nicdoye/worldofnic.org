@@ -103,6 +103,12 @@ gcloud docker push eu.gcr.io/worldofnic-production/worldofnic:latest
 ```bash
 kubectl rolling-update worldofnic-rc --image=eu.gcr.io/worldofnic-production/worldofnic-jekyll:v1.0.2
 ```
+
+### New 1.2 Deploy
+```bash
+kubectl apply -f rs/deployment.yaml
+```
+
 ### YAML files
 
 * `app.yaml` : Full app for GKE
