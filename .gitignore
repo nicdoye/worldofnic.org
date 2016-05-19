@@ -1,1 +1,5 @@
 .DS_Store
+files/hugo/_builds/
+files/hugo/_projects/
+files/hugo/_steps/
+
