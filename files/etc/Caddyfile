@@ -1,0 +1,5 @@
+www.worldofnic.org
+tls nic@worldofnic.org
+
+log stdout
+errors stdout

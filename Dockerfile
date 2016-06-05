@@ -3,17 +3,15 @@
 #
 
 # Pull base image
-FROM nginx:stable-alpine
+FROM abiosoft/caddy
 
 RUN apk update && \
-    apk upgrade && \
-    mkdir /etc/ssl/nginx && \
-    rm -f /etc/nginx/conf.d/default.conf
+    apk upgrade
+#setcap cap_net_bind_service=+ep /etc/caddy/caddy
 
 # Should you use secrets for SSL?
-COPY files/hugo/public              /usr/share/nginx/html/
-COPY files/etc/nginx                /etc/nginx/
-COPY files/etc/ssl/nginx            /etc/ssl/nginx/
+COPY files/hugo/public              /srv/
+COPY files/etc/Caddyfile            /etc/
 
 EXPOSE 80
 EXPOSE 443
