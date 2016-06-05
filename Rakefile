@@ -28,12 +28,23 @@ export GIT_COMMIT=$(git log | head -1 | awk '{print $2}')
 hugo
 
 # docker build
-full-path='eu.gcr.io/worldofnic-production/worldofnic'
-docker build --pull --rm -t eu.gcr.io/worldofnic-production/worldofnic .
-docker build -t eu.gcr.io/worldofnic-production/worldofnic:$version
+full_path='eu.gcr.io/worldofnic-production/worldofnic'
 
-gcloud docker push eu.gcr.io/worldofnic-production/worldofnic .
-gcloud docker push eu.gcr.io/worldofnic-production/worldofnic:$version
+# increment a revision x.y.z -> x.y.z+1
+recent=$( docker images | grep ^${full_path} | awk '{print $2}' | grep -v '[:alpha:]' | grep -v ^v | sort -n | tail -1)
+major_minor=$( echo ${recent} | cut -f1,2 -d . )
+revision=$( echo ${recent} | cut -f3 -d . )
+new_revision=echo $revision 1 + f | dc
+tag=${major_minor}.${new_revision}
+
+docker build --pull --rm -t ${full_path} .
+docker tag ${full_path} ${full_path}:${tag}
+
+gcloud docker push ${full_path}
+gcloud docker push ${full_path}:${tag}
 
 # Inject $version into app.yaml
-kubectl apply -f app.yaml
+yamlfile=$(mktemp)
+cat rs/deployment.yaml | sed -e "s/__VERSION__/${tag}/" > yamlfile
+kubectl apply -f yamlfile
+rm yamlfile

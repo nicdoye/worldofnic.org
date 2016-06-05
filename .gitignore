@@ -2,4 +2,4 @@
 files/hugo/_builds/
 files/hugo/_projects/
 files/hugo/_steps/
-
+certbot.log
