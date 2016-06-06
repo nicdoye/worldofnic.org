@@ -3,3 +3,6 @@ tls nic@worldofnic.org
 
 log stdout
 errors stdout
+
+header / Strict-Transport-Security "max-age=31536000;"
+
