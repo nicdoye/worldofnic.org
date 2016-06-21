@@ -12,16 +12,21 @@ I do not speak for any of my employers - past, present or future. Nor do I speak
 
 <span property="dct:title" xmlns:dct="http://purl.org/dc/terms/">"world of nic"</span> (including all original content, code, markup and images) by [{{ .Site.Params.AuthorName }}](http://worldofnic.org) is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/)
 
+__
+
 #### Powered by
 
 * [Google Container Engine](https://cloud.google.com/container-engine/)
 * [Kubernetes](http://kubernetes.io) ( [Apache License, Version 2.0](https://www.apache.org/licenses/LICENSE-2.0.html) )
 * [Docker](https://www.docker.com/) ( [Apache License, Version 2.0](https://www.apache.org/licenses/LICENSE-2.0.html) )
-* [Let's Encrypt](https://letsencrypt.org/)
-* [Hugo](https://gohugo.io/) static site generator (https://twitter.com/grahamashton) ( [Apache License, Version 2.0](https://www.apache.org/licenses/LICENSE-2.0.html) )
+* [Let's Encrypt&trade; certificate](https://letsencrypt.org/)
+* [Let's Encrypt&trade; design marks](https://letsencrypt.org/trademarks/) are trademarks kof the Internet Security Research Group. All rights reserved.
+* [Let's Encrypt&trade; design marks files](https://letsencrypt.org/trademarks/) ( [Creative Commons Attribution-NonCommercial 4.0 International License (CC BY-NC 4.0)](https://creativecommons.org/licenses/by-nc/4.0/) ) )
+* [Caddy](https://caddyserver.com/) ( [Apache License, Version 2.0](https://www.apache.org/licenses/LICENSE-2.0.html) )
+* [Hugo](https://gohugo.io/) static site generator ( [Apache License, Version 2.0](https://www.apache.org/licenses/LICENSE-2.0.html) )
 * [Ruma](http://www.binarytheme.com/free-multipurpose-template-ruma/) theme by [Binary Theme](http://www.binarytheme.com/author/btadmin/) ( [Creative Commons Attribution 3.0 Unported License](https://creativecommons.org/licenses/by/3.0/) ).
 * [Bootstrap](http://getbootstrap.com) ( [MIT License](https://github.com/twbs/bootstrap/blob/master/LICENSE) ).
-* [Font Awesome](https://fortawesome.github.io/Font-Awesome/) ( [SIL Open Font License](http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL) and [MIT License](https://opensource.org/licenses/mit-license.html) ).
+* [Font Awesome by Dave Gandy](http://fontawesome.io/) <i class='fa fa-fa'></i> ( [SIL Open Font License](http://scripts.sil.org/OFL) and [MIT License](https://opensource.org/licenses/mit-license.html) ).
 * [Open Sans](https://www.google.com/fonts/specimen/Open+Sans) font ( [Apache License, Version 2.0](https://www.apache.org/licenses/LICENSE-2.0.html) ).
 
 #### History
@@ -45,3 +50,4 @@ I do not speak for any of my employers - past, present or future. Nor do I speak
 *   2016: [Jekyll](https://jekyllrb.com) then [Hugo](https://gohugo.io/)
     [Google Container Engine](https://cloud.google.com/container-engine/) / [Kubernetes](http://kubernetes.io) / [Docker](https://www.docker.com/)
     [Google Cloud Storage](https://cloud.google.com/storage/) certain files
+    [Caddy](https://caddyserver.com/)
