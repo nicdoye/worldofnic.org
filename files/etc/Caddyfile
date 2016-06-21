@@ -1,10 +1,10 @@
 www.worldofnic.org:80
-tls off
-#tls nic@worldofnic.org
+#tls off
+tls nic@worldofnic.org
 
 log stdout
 errors stdout
 
-#header / Strict-Transport-Security "max-age=31536000;"
+header / Strict-Transport-Security "max-age=31536000;"
 
-redir http://doye.uk 307
+#redir http://doye.uk 307
