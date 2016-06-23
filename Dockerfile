@@ -1,5 +1,5 @@
 #
-# Pretty basic nginx
+# Pretty basic caddy
 #
 
 # Pull base image
