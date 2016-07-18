@@ -1,5 +1,5 @@
 www.worldofnic.org
-tls nic@worldofnic.org
+tls www.worldofnic.org-bundle.crt www.worldofnic.org.key
 
 log stdout
 errors stdout
