@@ -1,7 +1,16 @@
-www.worldofnic.org
-tls www.worldofnic.org-bundle.crt www.worldofnic.org.key
+https://www.worldofnic.org:443 {
+    tls /etc/www.worldofnic.org-bundle.crt /etc/www.worldofnic.org.key
+    header / Strict-Transport-Security "max-age=31536000;"
+    root /srv
 
-log stdout
-errors stdout
+    log stdout
+    errors stdout
+}
 
-header / Strict-Transport-Security "max-age=31536000;"
+http://www.worldofnic.org:80  {
+    redir https://www.worldofnic.org{uri} 307
+
+    log stdout
+    errors stdout
+}
+
