@@ -1,5 +1,6 @@
 .DS_Store
-files/hugo/_builds/
-files/hugo/_projects/
-files/hugo/_steps/
+_builds/
+_projects/
+_steps/
+/public
 certbot.log
