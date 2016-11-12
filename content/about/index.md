@@ -10,12 +10,14 @@ I do not speak for any of my employers - past, present or future. Nor do I speak
 
 #### Licences
 
-<span property="dct:title" xmlns:dct="http://purl.org/dc/terms/">"world of nic"</span> (including all original content, code, markup and images) by [{{ .Site.Params.AuthorName }}](http://worldofnic.org) is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/).
+<span property="dct:title" xmlns:dct="http://purl.org/dc/terms/">"world of nic"</span> (including all original content, code, markup and images) by [Nic Doye](http://worldofnic.org) is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/).
 
 
 #### Powered by
 
-* [GitLab Pages](https://gitlab.com/) <i class='fa fa-gitlab'></i>
+* [AWS Cloudfront](https://aws.amazon.com/cloudfront/)
+* [AWS S3](https://aws.amazon.com/s3/) /
+* [GitLab CI](https://about.gitlab.com/gitlab-ci/) <i class='fa fa-gitlab'></i>
 * [Hugo](https://gohugo.io/) static site generator ( [Apache License, Version 2.0](https://www.apache.org/licenses/LICENSE-2.0.html) )
 * [Ruma](http://www.binarytheme.com/free-multipurpose-template-ruma/) theme by [Binary Theme](http://www.binarytheme.com/author/btadmin/)<br/>
 ( [Creative Commons Attribution 3.0 Unported License](https://creativecommons.org/licenses/by/3.0/) ).
@@ -54,4 +56,7 @@ Over the years I've used this to learn many languages, frameworks, databases and
 *   2016: [Jekyll](https://jekyllrb.com) then
     [Hugo](https://gohugo.io/)<br/>
     [Google Container Engine](https://cloud.google.com/container-engine/) / [Kubernetes](http://kubernetes.io) / [Docker](https://www.docker.com/) / [Caddy](https://caddyserver.com/) then<br/>
-    [GitLab Pages](https://gitlab.com/)
+    [GitLab Pages](https://gitlab.com/) then<br/>
+    [GitLab CI](https://about.gitlab.com/gitlab-ci/) /
+    [AWS S3](https://aws.amazon.com/s3/) /
+    [AWS Cloudfront](https://aws.amazon.com/cloudfront/)
