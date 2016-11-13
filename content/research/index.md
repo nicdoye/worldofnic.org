@@ -17,8 +17,8 @@ I'm mainly interested in pure maths, and by chance this has warped into an inter
 
 #### Publications
 
-*   [The implementation of various algorithms for permutation groups in the computer algebra system: Axiom (1993)](http://static.worldofnic.org/cdn/ps/research/msc.ps)
-*   [Order sorted computer algebra and coercions, 1997](http://static.worldofnic.org/cdn/ps/research/phd.ps)
+*   [The implementation of various algorithms for permutation groups in the computer algebra system: Axiom (1993)](https://static.worldofnic.org/cdn/ps/research/msc.ps)
+*   [Order sorted computer algebra and coercions, 1997](https://static.worldofnic.org/cdn/ps/research/phd.ps)
 *   [Automated coercion for Axiom, 1999](http://www.acm.org/pubs/articles/proceedings/issac/309831/p229-doye/p229-doye.pdf)
 
 #### Other stuff I've thought of doing but never have
