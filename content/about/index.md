@@ -15,8 +15,7 @@ I do not speak for any of my employers - past, present or future. Nor do I speak
 
 #### Powered by
 
-* [AWS Cloudfront](https://aws.amazon.com/cloudfront/)
-* [AWS S3](https://aws.amazon.com/s3/) /
+* [AWS S3](https://aws.amazon.com/s3/) [AWS Cloudfront](https://aws.amazon.com/cloudfront/)
 * [GitLab CI](https://about.gitlab.com/gitlab-ci/) <i class='fa fa-gitlab'></i>
 * [Hugo](https://gohugo.io/) static site generator ( [Apache License, Version 2.0](https://www.apache.org/licenses/LICENSE-2.0.html) )
 * [Ruma](http://www.binarytheme.com/free-multipurpose-template-ruma/) theme by [Binary Theme](http://www.binarytheme.com/author/btadmin/)<br/>
