@@ -1,25 +1,47 @@
 image: publysher/hugo
 
-pages:
-  script:
-  - hugo
-  artifacts:
-    paths:
-    - public
-  only:
-  - master
-
-production:
+.deploy_template:
   type: deploy
   before_script:
   - apt-get update
   - apt-get -qq install python python-pip ca-certificates
   - pip install awscli
-  script:
-  - hugo
-  - aws s3 sync public/ s3://www.worldofnic.org/
   artifacts:
     paths:
     - public
+
+# Test Build
+test:
+  script:
+  - hugo
+  artifacts:
+    paths:
+    - public
+  environment:
+    name: test
+
+# deploy_to_staging:
+staging:
+  <<: *deploy_template
+  script:
+  - hugo
+  - aws s3 sync public/ s3://staging.worldofnic.org/
+  only:
+  - develop
+  environment: 
+    name: staging
+    url: https://staging.worldofnic.org
+
+#deploy_to_production:
+  <<: *deploy_template
+  script:
+  - hugo
+  - aws s3 sync public/ s3://www.worldofnic.org/
   only:
   - master
+  environment: 
+    name: production
+    url: https://www.worldofnic.org
+
+
+
