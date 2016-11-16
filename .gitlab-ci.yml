@@ -1,6 +1,6 @@
 image: publysher/hugo
 
-.deploy_template:
+.deploy-template: &deploy-template
   type: deploy
   before_script:
   - apt-get update
@@ -20,9 +20,9 @@ test:
   environment:
     name: test
 
-# deploy_to_staging:
+# deploy_to_staging
 staging:
-  <<: *deploy_template
+  <<: *deploy-template
   script:
   - hugo
   - aws s3 sync public/ s3://staging.worldofnic.org/
@@ -32,8 +32,9 @@ staging:
     name: staging
     url: https://staging.worldofnic.org
 
-#deploy_to_production:
-  <<: *deploy_template
+# deploy_to_production
+production:
+  <<: *deploy-template
   script:
   - hugo
   - aws s3 sync public/ s3://www.worldofnic.org/
