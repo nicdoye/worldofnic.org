@@ -1,31 +1,30 @@
-  <header>
-      <div class='navbar navbar-inverse navbar-fixed-top'>
-          <div class='container'>
-              <div class='navbar-header'>
-                  <button class='navbar-toggle' data-target='.navbar-collapse' data-toggle='collapse' type='button'>
-                      <span class='icon-bar'></span>
-                      <span class='icon-bar'></span>
-                      <span class='icon-bar'></span>
-                  </button>
-                  <a class='navbar-brand' href='{{ .Site.BaseURL }}'>{{ .Site.Title }}</a>
-              </div>
-              <div class='navbar-collapse collapse'>
-                <ul class='nav navbar-nav navbar-right'></ul>
-                  <ul class='nav navbar-nav navbar-right'>
-                    <li>
-                      <a href='/'>Home</a>
-                    </li>
-                    <li>
-                      <a href='/about'>About</a>
-                    </li>
-                    <li>
-                      <a href='/geekery'>Geekery/Open Source</a>
-                    </li>
-                    <li>
-                      <a href='/research'>Research</a>
-                    </li>
-                  </ul>
-              </div>
-          </div>
-      </div>
+
+
+<!-- Uses a header that scrolls with the text, rather than staying
+  locked at the top -->
+  <header class="mdl-layout__header mdl-layout__header--scroll">
+    <div class="mdl-layout__header-row">
+      <!-- Title -->
+      <span class="mdl-layout-title">{{ .Site.Title }}</span>
+      <!-- Add spacer, to align navigation to the right -->
+      <div class="mdl-layout-spacer"></div>
+      <!-- Navigation -->
+      <nav class="mdl-navigation">
+        <a class="mdl-navigation__link" href="/">Home</a>
+        <a class="mdl-navigation__link" href="/about">About</a>
+        <a class="mdl-navigation__link" href="/geekery">Geekery/Open Source</a>
+        <a class="mdl-navigation__link" href="/research">Research</a>
+      </nav>
+    </div>
   </header>
+  <div class="mdl-layout__drawer">
+    <span class="mdl-layout-title">{{ .Site.Title }}</span>
+    <nav class="mdl-navigation">
+        <a class="mdl-navigation__link" href="/">Home</a>
+        <a class="mdl-navigation__link" href="/about">About</a>
+        <a class="mdl-navigation__link" href="/geekery">Geekery/Open Source</a>
+        <a class="mdl-navigation__link" href="/research">Research</a>
+    </nav>
+  </div>
+
+</div>

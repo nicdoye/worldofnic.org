@@ -1,21 +1,25 @@
 <!DOCTYPE html>
 <html>
-    {{ partial "head.html" . }}
+{{ partial "head.html" . }}
     <body>
+        <div class="mdl-layout mdl-js-layout">
         {{ partial "header.html" . }}
-        <div id='content'>
-          <article role='main'>
-                {{ partial "no-carousel.html" . }}
-                <section id="port-sec">
-                    <div class="container">
-                        <div class="row pad-row">
-                          <div class="col-md-12 col-sm-12">
-                            {{ .Content }}
-                          </div>
-                        </div>
-                    </div>
-                </section>
-            </article>
+            <div id='content'>
+                <main class="mdl-layout__content">
+                    <article role='main'>
+                    {{ partial "no-carousel.html" . }}
+                        <section id="port-sec">
+                            <div class="container">
+                                <div class="row pad-row">
+                                <div class="col-md-12 col-sm-12">
+                                    {{ .Content }}
+                                </div>
+                                </div>
+                            </div>
+                        </section>
+                    </article>
+                </main>
+            </div>
         </div>
         {{ partial "footer.html" . }}
     </body>
