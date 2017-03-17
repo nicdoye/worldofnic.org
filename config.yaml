@@ -8,10 +8,10 @@ canonifyURLs: false
 baseurl: "https://www.worldofnic.org/"
 title: "world of nic"
 footnotereturnlinkcontents: "↩"
-disableRSS: "true"
-disable404: "true"
-disableSitemap: "true"
-theme: "stolen-from-somewhere"
+disableRSS: true
+disable404: false
+disableSitemap: true
+theme: "won2017"
 params:
   Subtitle: "now lower in saturated fats"
   AuthorName: "Nicolas Doye"

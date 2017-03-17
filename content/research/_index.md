@@ -1,7 +1,8 @@
 ---
-layout: no-carousel
+layout: header-image
 title: Former Research
 ---
+
 
 #### Background
 

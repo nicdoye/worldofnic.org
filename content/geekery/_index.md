@@ -1,5 +1,5 @@
 ---
-layout: no-carousel
+layout: header-image
 title: Geekery/Open Source
 ---
 
