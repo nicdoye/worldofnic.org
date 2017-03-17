@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    {{ partial "head.html" . }}
+    <body class="components">
+        <!-- <div class="mdl-layout mdl-js-layout"> -->
+        {{ partial "header.html" . }}
+        {{ partial "header-image.html" . }}
+        {{ range .Data.Pages }}
+            {{ if isset .Params "homecontent" }}
+                {{ .Content }}
+            {{ end }}
+        {{ end }}
+        <!-- </div> -->
+        {{ partial "footer.html" . }}
+    </body>
+</html>

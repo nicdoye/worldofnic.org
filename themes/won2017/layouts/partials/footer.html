@@ -1,5 +1,7 @@
-<footer class="mdl-mega-footer">
+<div class="section section--pre-footer hide-for-print">
   <div class='container'>
+    <h1 class="mdl-mega-footer__heading center section--pre-footer section--heading-center">Elsewhere</h1>
+
     <!--
       <div class='mdl-grid'>
         <div class='mdl-cell mdl-cell--12-col'>
@@ -19,18 +21,19 @@
         </a>
       </div>
       <div class='mdl-cell mdl-cell--1-col'>
-        <a href='https://google.com/+NicolasDoye' title="google plus">
-          <i class='fa fa-google-plus fa-2x'></i>
-        </a>
-      </div>
-      <div class='mdl-cell mdl-cell--1-col'>
-        <a href='https://github.com/nicdoye' title="github">
-          <i class='fa fa-github fa-2x'></i>
+        <a href='https://medium.com/@nicdoye' title="medium">
+          <i class='fa fa-medium fa-2x'></i>
         </a>
       </div>
       <div class='mdl-cell mdl-cell--1-col'>
         <a href='https://gitlab.com/nicdoye' title="github">
           <i class='fa fa-gitlab fa-2x'></i>
+        </a>
+      </div>
+
+      <div class='mdl-cell mdl-cell--1-col'>
+        <a href='https://github.com/nicdoye' title="github">
+          <i class='fa fa-github fa-2x'></i>
         </a>
       </div>
       <div class='mdl-cell mdl-cell--1-col'>
@@ -65,16 +68,21 @@
         </a>
       </div>
       <div class='mdl-cell mdl-cell--1-col'>
+        <a href='https://google.com/+NicolasDoye' title="google plus">
+          <i class='fa fa-google-plus fa-2x'></i>
+        </a>
+      </div>
+      <!--
+      <div class='mdl-cell mdl-cell--1-col'>
         <a href='https://onename.com/nicdoye' title="onename">
           <i class='fa fa-circle-o fa-2x'></i>
         </a>
       </div>
+      -->
     </div>
   </div>
-
-
-
-
+</div>
+<footer class="mdl-mega-footer">
   <div class="mdl-mega-footer__middle-section">
     <div class="mdl-mega-footer__drop-down-section">
       <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
@@ -98,16 +106,18 @@
         </li>
       </ul>
     </div>
+
   </div>
 </footer>
 <script type="text/javascript">
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', '{{ .Site.GoogleAnalytics }}']);
   _gaq.push(['_trackPageview']);
-  (function() {
+  (function () {
     var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
-  </script>
+
+</script>
 <script src='//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js'></script>

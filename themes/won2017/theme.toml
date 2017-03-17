@@ -1,9 +1,9 @@
 # theme.toml template for a Hugo theme
 # See https://github.com/spf13/hugoThemes#themetoml for an example
 
-name = "Stolen From Somewhere"
-license = "MIT"
-licenselink = "https://github.com/nicdoye/stolen-from-somewhere/blob/master/LICENSE.md"
+name = "won2017"
+license = "Creative Commons Attribution 4.0 International License"
+licenselink = "https://creativecommons.org/licenses/by/4.0/"
 description = ""
 homepage = "http://siteforthistheme.com/"
 tags = ["", ""]

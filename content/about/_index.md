@@ -1,5 +1,5 @@
 ---
-layout: no-carousel
+layout: header-image
 title: About
 ---
 
@@ -10,17 +10,15 @@ I do not speak for any of my employers - past, present or future. Nor do I speak
 
 #### Licences
 
-<span property="dct:title" xmlns:dct="http://purl.org/dc/terms/">"world of nic"</span> (including all original content, code, markup and images) by [Nic Doye](http://worldofnic.org) is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/).
+<span property="dct:title" xmlns:dct="http://purl.org/dc/terms/">"world of nic"</span> (including all original content, code, markup and images) by [Nic Doye](http://worldofnic.org) is licensed under a 
+[Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/).
 
 
 #### Powered by
 
-* [AWS S3](https://aws.amazon.com/s3/) [AWS Cloudfront](https://aws.amazon.com/cloudfront/)
+* [AWS S3](https://aws.amazon.com/s3/) and [AWS Cloudfront](https://aws.amazon.com/cloudfront/)
 * [GitLab CI](https://about.gitlab.com/gitlab-ci/) <i class='fa fa-gitlab'></i>
 * [Hugo](https://gohugo.io/) static site generator ( [Apache License, Version 2.0](https://www.apache.org/licenses/LICENSE-2.0.html) )
-* [Ruma](http://www.binarytheme.com/free-multipurpose-template-ruma/) theme by [Binary Theme](http://www.binarytheme.com/author/btadmin/)<br/>
-( [Creative Commons Attribution 3.0 Unported License](https://creativecommons.org/licenses/by/3.0/) ).
-* [Bootstrap](http://getbootstrap.com) ( [MIT License](https://github.com/twbs/bootstrap/blob/master/LICENSE) ).
 * [Font Awesome by Dave Gandy](http://fontawesome.io/) <i class='fa fa-fa'></i><br/>
 ( [SIL Open Font License](http://scripts.sil.org/OFL) and [MIT License](https://opensource.org/licenses/mit-license.html) ).
 * [Roboto](https://www.google.com/fonts/specimen/Roboto) font ( [Apache License, Version 2.0](https://www.apache.org/licenses/LICENSE-2.0.html) ).

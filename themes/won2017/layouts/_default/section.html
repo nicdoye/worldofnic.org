@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+{{ partial "head.html" . }}
+    <body>
+       <!--  <div class="mdl-layout mdl-js-layout"> -->
+        {{ partial "header.html" . }}
+        {{ partial "header-image.html" . }}
+            <!-- <section id="port-sec">
+                <div class="container">
+                    <div class="row pad-row">
+                    <div class="col-md-12 col-sm-12"> -->
+       <section class="mdl-layout__content">
+                        {{ .Content }}
+       </section>
+                    <!-- </div>
+                    </div>
+                </div>
+            </section> -->
+        <!-- </div> -->
+        {{ partial "footer.html" . }}
+    </body>
+</html>
