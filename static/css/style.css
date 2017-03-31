@@ -137,9 +137,14 @@ textarea {
 .hidden {
     display: none !important
 }
+/*
+clip is deprecated, but... clip-path is pretty much unsupported.
+https://developer.mozilla.org/en/docs/Web/CSS/clip
+https://developer.mozilla.org/en-US/docs/Web/CSS/clip-path
+*/
 .visuallyhidden {
     border: 0;
-    clip: rect(0 0 0 0);
+    clip: rect(0, 0, 0, 0);
     height: 1px;
     margin: -1px;
     overflow: hidden;
@@ -2657,7 +2662,7 @@ input.mdl-button[type="submit"] {
     padding: 8px 0;
     margin: 0;
     opacity: 0;
-    clip: rect(0 0 0 0);
+    clip: rect(0, 0, 0, 0);
     z-index: -1
 }
 .mdl-menu__container.is-visible .mdl-menu {
