@@ -1,12 +1,25 @@
----
-layout: header-image
-homecontent: true
-title: 404
----
+<!DOCTYPE html>
+<html>
+    {{ partial "head.html" . }}
+    <body class="components">
+        <!-- <div class="mdl-layout mdl-js-layout"> -->
+        {{ partial "header.html" . }}
+        {{ partial "header-image.html" . }}
+        {{ range .Data.Pages }}
+            {{ if isset .Params "homecontent" }}
+       <section class="mdl-layout__content">
 <h4>Don't let it fool you.</h4>
 <p>You are in enemy country. Be alert. Suspicious of everyone. Take no chances.</p>
 <p>They were brought up on straight propaganda.</p>
-<p>Don't argue with them. Don't try to change their point of view.</p>
+<p><a href="https://youtu.be/p5-1HG2oU_M">Don't argue</a> with them. Don't try to change their point of view.</p>
 <p>You will not argue with them. You will not be friendly. You will be aloof. Watchful and suspicious.</p>
 <p>Don't clasp that hand. It's not the kind of a hand you can clasp in friendship.</p>
 <p>Trust none of them.</p>
+       </section>
+
+            {{ end }}
+        {{ end }}
+        <!-- </div> -->
+        {{ partial "footer.html" . }}
+    </body>
+</html>
