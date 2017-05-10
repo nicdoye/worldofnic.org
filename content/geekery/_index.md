@@ -72,5 +72,5 @@ Over the years I've used this to learn many languages, frameworks, databases and
     [GitLab CI](https://about.gitlab.com/gitlab-ci/) /
     [AWS S3](https://aws.amazon.com/s3/) /
     [AWS Cloudfront](https://aws.amazon.com/cloudfront/)
-*   2017: [Material Design Lite](https://getmdl.io)
+*   2017: [Material Design Lite](https://getmdl.io)<br/>
     [Firebase](https://firebase.google.com)
