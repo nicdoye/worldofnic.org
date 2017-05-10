@@ -46,14 +46,18 @@ staging:
 # deploy_to_production
 production:
   <<: *deploy-template
+  stage: deploy
   script:
   - hugo
-  - aws s3 sync public/ s3://www.worldofnic.org/
+  - npm install -g firebase-tools
+  - npm install
+  - firebase use --token $FIREBASE_TOKEN staging
+  - firebase deploy -m "Pipeline $CI_PIPELINE_ID, build $CI_BUILD_ID" --non-interactive --token $FIREBASE_TOKEN
   only:
   - master
   environment: 
     name: production
-    url: https://www.worldofnic.org
+    url: https://worldofnic.org
 
 
 
