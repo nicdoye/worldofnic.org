@@ -1,0 +1,7 @@
+{
+  "projects": {
+    "default": "www-worldofnic-org",
+    "staging": "staging-worldofnic-org",
+    "production": "www-worldofnic-org"
+  }
+}
