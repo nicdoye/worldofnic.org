@@ -1,7 +1,7 @@
 {
   "projects": {
     "default": "www-worldofnic-org",
-    "staging": "staging-worldofnic-org",
+    "staging": "staging-doye-sites",
     "production": "www-worldofnic-org"
   }
 }
