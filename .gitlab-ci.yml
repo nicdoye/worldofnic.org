@@ -1,4 +1,4 @@
-image: publysher/hugo
+image: eu.gcr.io/worldofnic-production/hugo
 
 .deploy-template: &deploy-template
   type: deploy
