@@ -67,8 +67,8 @@ deploy_production:
   image: debian:buster
   script:
   - apt-get update
-  - apt-get install python-pip
-  - apt-get install hugo
+  - apt-get install -y python-pip
+  - apt-get install -y hugo
   - hugo
   # - apt-get install python-pip
   - cat  /etc/debian_version /etc/debian_release
