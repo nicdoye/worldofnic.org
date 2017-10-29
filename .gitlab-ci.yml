@@ -64,7 +64,7 @@ deploy_production:
   environment: production
   # image: publysher/hugo
   # image: python:3.7.0a2-stretch
-  image: centos/7
+  image: centos:7
   script:
   - yum -y install yum-plugin-copr
   - yum -y copr enable daftaupe/hugo
