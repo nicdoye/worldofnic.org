@@ -40,8 +40,8 @@ staging:
   only:
   - develop
   environment: 
-    name: staging
-    url: https://staging.worldofnic.org
+    name: staging-was
+    #url: https://staging.worldofnic.org
 
 # deploy_to_production
 production:
@@ -59,6 +59,24 @@ production:
     name: production-was
     url: https://worldofnic.org
 
+
+deploy_staging:
+  environment: staging
+  # image: publysher/hugo
+  # image: python:3.7.0a2-stretch
+  image: centos:7
+  script:
+  - yum -y install yum-plugin-copr
+  - yum -y copr enable daftaupe/hugo
+  - yum -y copr enable pypa/pypa
+  - yum -y install python-pip
+  - yum -y install hugo
+  - hugo
+  - pip install awscli
+  - env | sort
+  - aws s3 cp ./ s3://$S3_BUCKET_NAME/ --recursive --exclude "*" --include "*.css" --include "*.html" --include "*.ico" --include "*.jpg" --include "*.png" --include "*.txt"
+  only:
+  - develop
 
 deploy_production:
   environment: production
