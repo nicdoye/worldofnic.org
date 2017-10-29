@@ -56,8 +56,16 @@ production:
   only:
   - master
   environment: 
-    name: production
+    name: production-was
     url: https://worldofnic.org
 
 
+deploy_production:
+  environment: production
+  image: python:latest
+  script:
+  - pip install awscli
+  - aws s3 cp ./ s3://$S3_BUCKET_NAME/ --recursive --exclude "*" --include "*.css" --include "*.html" --include "*.ico" --include "*.jpg" --include "*.png" --include "*.txt"
+  only:
+  - master
 
