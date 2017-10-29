@@ -66,6 +66,7 @@ deploy_production:
   # image: python:3.7.0a2-stretch
   image: fedora/python
   script:
+  - dnf install 'dnf-command(copr)'
   - dnf -y copr enable daftaupe/hugo
   - dnf -y install hugo
   - hugo
