@@ -11,7 +11,7 @@ footnotereturnlinkcontents: "↩"
 disableRSS: true
 disable404: false
 disableSitemap: true
-theme: "won-2017-vuetify"
+theme: "won2017"
 params:
   Subtitle: "Tant que je respire, j'attaque"
   AuthorName: "Nicolas Doye"
