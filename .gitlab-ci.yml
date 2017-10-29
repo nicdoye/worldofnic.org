@@ -63,7 +63,7 @@ production:
 deploy_production:
   environment: production
   # image: publysher/hugo
-  image: python:3.6.3-jessie
+  image: python:3.7.0a2-stretch
   script:
   - apt-get install hugo
   - hugo
