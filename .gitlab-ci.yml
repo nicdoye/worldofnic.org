@@ -64,15 +64,11 @@ deploy_production:
   environment: production
   # image: publysher/hugo
   # image: python:3.7.0a2-stretch
-  image: debian:buster
+  image: fedora/python
   script:
-  - apt-get update
-  - apt-get install -y python-pip
-  - apt-get install -y hugo
+  - dnf -y copr enable daftaupe/hugo
+  - dnf -y install hugo
   - hugo
-  # - apt-get install python-pip
-  - cat  /etc/debian_version /etc/debian_release
-  # - apt-get install python
   - pip install awscli
   - aws s3 cp ./ s3://$S3_BUCKET_NAME/ --recursive --exclude "*" --include "*.css" --include "*.html" --include "*.ico" --include "*.jpg" --include "*.png" --include "*.txt"
   only:
