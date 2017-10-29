@@ -69,6 +69,7 @@ deploy_production:
   - dnf -y install 'dnf-command(copr)'
   - dnf -y copr enable daftaupe/hugo
   - dnf -y update
+  - dnf -y install python2-pip
   - dnf -y install hugo
   - hugo
   - pip install awscli
