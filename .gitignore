@@ -5,3 +5,6 @@ _steps/
 /public
 certbot.log
 .idea/
+node_modules/
+package.json
+yarn.lock

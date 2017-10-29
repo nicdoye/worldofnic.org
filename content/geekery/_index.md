@@ -39,7 +39,7 @@ I've been an RHCE (RHEL 3) and I suppose I'm still an Oracle PL/SQL Developer Ce
 #### Powered by
 
 * [GitLab CI](https://about.gitlab.com/gitlab-ci/) <i class='fa fa-gitlab' aria-hidden="true"></i>
-* [Firebase](https://firebase.google.com)  ( [MIT License](https://opensource.org/licenses/mit-license.html) ). <i class='fa fa-google' aria-hidden="true"></i>
+* [AWS](https://aws.amazon.com). <i class='fa fa-amazon' aria-hidden="true"></i>
 * [Material Design Lite](https://getmdl.io) ( [Apache License, Version 2.0](https://www.apache.org/licenses/LICENSE-2.0.html) ). <i class="fa fa-google" aria-hidden="true"></i>
 * [Hugo](https://gohugo.io/) static site generator ( [Apache License, Version 2.0](https://www.apache.org/licenses/LICENSE-2.0.html) )
 * [Roboto](https://www.google.com/fonts/specimen/Roboto) font ( [Apache License, Version 2.0](https://www.apache.org/licenses/LICENSE-2.0.html) ). <i class='fa fa-google' aria-hidden="true"></i>

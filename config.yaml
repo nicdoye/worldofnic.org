@@ -11,8 +11,8 @@ footnotereturnlinkcontents: "↩"
 disableRSS: true
 disable404: false
 disableSitemap: true
-theme: "won2017"
+theme: "won-2017-vuetify"
 params:
-  Subtitle: "now lower in saturated fats"
+  Subtitle: "Tant que je respire, j'attaque"
   AuthorName: "Nicolas Doye"
   GitHubUser: "nicdoye"
