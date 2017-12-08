@@ -38,13 +38,12 @@ I've been an RHCE (RHEL 3) and I suppose I'm still an Oracle PL/SQL Developer Ce
 
 #### Powered by
 
-* [GitLab CI](https://about.gitlab.com/gitlab-ci/) <i class='fa fa-gitlab' aria-hidden="true"></i>
-* [AWS](https://aws.amazon.com). <i class='fa fa-amazon' aria-hidden="true"></i>
-* [Material Design Lite](https://getmdl.io) ( [Apache License, Version 2.0](https://www.apache.org/licenses/LICENSE-2.0.html) ). <i class="fa fa-google" aria-hidden="true"></i>
+* [GitLab CI](https://about.gitlab.com/gitlab-ci/) <i class='fab fa-gitlab' aria-hidden="true"></i>
+* [AWS](https://aws.amazon.com). <i class='fab fa-aws' aria-hidden="true"></i>
+* [Material Design Lite](https://getmdl.io) ( [Apache License, Version 2.0](https://www.apache.org/licenses/LICENSE-2.0.html) ). <i class="fab fa-google" aria-hidden="true"></i>
 * [Hugo](https://gohugo.io/) static site generator ( [Apache License, Version 2.0](https://www.apache.org/licenses/LICENSE-2.0.html) )
-* [Roboto](https://www.google.com/fonts/specimen/Roboto) font ( [Apache License, Version 2.0](https://www.apache.org/licenses/LICENSE-2.0.html) ). <i class='fa fa-google' aria-hidden="true"></i>
-* [Font Awesome by Dave Gandy](http://fontawesome.io/)
-( [SIL Open Font License](http://scripts.sil.org/OFL) and [MIT License](https://opensource.org/licenses/mit-license.html) ).  <i class='fa fa-fa' aria-hidden="true"></i>
+* [Roboto](https://www.google.com/fonts/specimen/Roboto) font ( [Apache License, Version 2.0](https://www.apache.org/licenses/LICENSE-2.0.html) ). <i class='fab fa-google' aria-hidden="true"></i>
+* [Font Awesome Pro Dave Gandy](https://fontawesome.com/) <i class='fab fa-font-awesome-flag' aria-hidden="true"></i>
 
 
 #### History
@@ -82,4 +81,8 @@ Over the years I've used this to learn many languages, frameworks, databases and
     [AWS S3](https://aws.amazon.com/s3/) /
     [AWS Cloudfront](https://aws.amazon.com/cloudfront/)
 *   2017: [Material Design Lite](https://getmdl.io)<br/>
-    [Firebase](https://firebase.google.com)
+    [GitLab CI](https://about.gitlab.com/gitlab-ci/) /
+    [Firebase](https://firebase.google.com) then back to <br/>
+    [GitLab CI](https://about.gitlab.com/gitlab-ci/) /
+    [AWS S3](https://aws.amazon.com/s3/) /
+    [AWS Cloudfront](https://aws.amazon.com/cloudfront/)
