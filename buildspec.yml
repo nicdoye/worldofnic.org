@@ -1,0 +1,23 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - echo Install Hugo
+      - curl https://github.com/gohugoio/hugo/releases/download/v0.31.1/hugo_0.31.1_Linux-64bit.deb -o /tmp/hugo.deb
+      - sudo apt install /tmp/hugo.deb
+  pre_build:
+    commands:
+      - echo Nothing to do in the pre_build phase...
+  build:
+    commands:
+      - echo Build started on `date`
+      - hugo
+  post_build:
+    commands:
+      - echo Build completed on `date`
+      - aws s3 cp ./ s3://$BUCKET_NAME/ --recursive --exclude "*" --include "*.html" --include "*.jpg" --include "*.ico" --include "*.png" --include "*.png" --include "*.jpg" --include "*.html" --include "*.png" --include "*.css" --include "*.min" --include "*.css" --include "*.svg" --include "*.woff2" --include "*.ttf" --include "*.woff" --include "*.eot" --include "*.txt"
+#artifacts:
+#  files:
+#    - '**/*'
+#  base-directory: public
