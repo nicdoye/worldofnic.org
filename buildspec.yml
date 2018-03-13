@@ -1,10 +1,10 @@
-version: 0.2
+catversion: 0.2
 
 phases:
   install:
     commands:
       - echo Install Hugo
-      - wget -O /tmp/hugo.deb https://github.com/gohugoio/hugo/releases/download/v0.31.1/hugo_0.31.1_Linux-64bit.deb
+      - wget -O /tmp/hugo.deb https://github.com/gohugoio/hugo/releases/download/v0.37.1/hugo_0.37.1_Linux-64bit.deb
       - sudo dpkg -i /tmp/hugo.deb
       - sudo apt-get install -f
   pre_build:
