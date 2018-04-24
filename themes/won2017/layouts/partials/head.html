@@ -1,20 +1,7 @@
 <head>
-  <!--  Based on
-    https://stackoverflow.com/questions/4723213/detect-http-or-https-then-force-https-in-javascript
-    and
-    https://developer.mozilla.org/en-US/docs/Web/API/Location
-  -->
-  <script>
-    if (window.location.protocol != "https:" && window.location.hostname.split('.')[0] == 'www')
-      window.location.href = "https:" +
-      "//" +
-      window.location.hostname +
-      window.location.pathname +
-      window.location.search +
-      window.location.hash;
-  </script>
   <meta charset='utf-8'>
-  <meta content='width=device-width, initial-scale=1, maximum-scale=1' name='viewport'> {{ .Hugo.Generator }}
+  <meta content='width=device-width, initial-scale=1, maximum-scale=1' name='viewport'> 
+  {{ .Hugo.Generator }}
   <meta content='1A3E7EF1BF62027B28C67EA4B9D0EB6B' name='msvalidate.01'>
 
   <!-- Material Design Lite https://getmdl.io/started/index.html -->

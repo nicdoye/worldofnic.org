@@ -89,6 +89,11 @@ color: #FFF;
 }
 */
 
+/* Override mdl-mega-footer__bottom-section massive height (101 / 117.5) */
+shorter-mdl-bottom {
+    height: 40px;
+}
+
 /* From Google Wallet */
 
 html {
