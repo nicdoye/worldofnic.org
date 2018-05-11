@@ -5,13 +5,12 @@ languageCode: en-us
 googleAnalytics: UA-34783744-1
 relativeURLs: false
 canonifyURLs: false
-baseurl: "https://worldofnic.org/"
+baseurl: "https://www.worldofnic.org/"
 title: "world of nic"
 footnotereturnlinkcontents: "↩"
 disableRSS: true
 disable404: false
 disableSitemap: true
-enableGitInfo: true
 theme: "won2017"
 params:
   Subtitle: "Tant que je respire, j'attaque"
