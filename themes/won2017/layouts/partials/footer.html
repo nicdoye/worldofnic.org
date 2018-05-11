@@ -35,8 +35,8 @@
             <h1 class="mdl-mega-footer__heading">CI/CD</h1>
             <ul class="mdl-mega-footer__link-list">
               <li>
-                <a href='https://aws.amazon.com/codecommit/'>AWS CodeCommit
-                <i class="fab fa-aws" aria-hidden="true"></i>
+                <a href='https://github.com/'>GitHub
+                <i class="fab fa-github" aria-hidden="true"></i>
                 </a>
               </li>        
               <li>
@@ -71,12 +71,24 @@
             <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
             <h1 class="mdl-mega-footer__heading">License</h1>
             <ul class="mdl-mega-footer__link-list">
+                <li>
                 <a href='https://creativecommons.org/licenses/by/4.0/' rel='license'>
                 CC BY 4.0
                 <i class='fab fa-creative-commons' aria-hidden="true"></i>
                 <i class='fab fa-creative-commons-by' aria-hidden="true"></i>
                 </a>
+                </li>
               </ul>
+
+            <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+
+            <h1 class="mdl-mega-footer__heading">{{ if not .GitInfo }}No {{end}}Git Info</h1>
+            <ul class="mdl-mega-footer__link-list">
+                <li>Date: {{ if .GitInfo }} {{ .GitInfo.AuthorDate }} {{ else }} unset {{ end }}</li>
+                <li>By: {{ if .GitInfo }} {{ .GitInfo.AuthorName }} {{ else }} unset {{ end }}</li>
+                <li>Subject: {{ if .GitInfo }} "{{ .GitInfo.Subject }}" {{ else }} unset {{ end }}</li>
+                <li>Hash: {{ if .GitInfo }} {{ .GitInfo.AbbreviatedHash }} {{ else }} unset {{ end }}</li>
+            </ul>
         </div>
         <div class='mdl-cell mdl-cell--1-col'><!-- --></div>
       </div>
