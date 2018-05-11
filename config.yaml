@@ -5,7 +5,7 @@ languageCode: en-us
 googleAnalytics: UA-34783744-1
 relativeURLs: false
 canonifyURLs: false
-baseurl: "https://www.worldofnic.org/"
+baseurl: "https://worldofnic.org/"
 title: "world of nic"
 footnotereturnlinkcontents: "↩"
 disableRSS: true
