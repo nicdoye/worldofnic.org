@@ -14,7 +14,7 @@ jobs:
             - public
   deploy:
     docker:
-      - image: codeship/aws-deployment
+      - image: jess/awscli
     steps:
       - attach_workspace:
           at: workspace
