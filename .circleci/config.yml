@@ -4,6 +4,28 @@ jobs:
     docker:
       - image: nicdoye/hugo:busybox
     steps:
-      - checkout
-      - run: echo "A first hello"
-      - run: hugo
+      - run: mkdir -p workspace
+      - checkout: 
+          path: workspace
+      - run: hugo -s workspace
+      - persist_to_workspace:
+          root: workspace
+          paths:
+            - public
+  deploy:
+    docker:
+      - image: mesosphere/aws-cli
+    steps:
+      - attach_workspace:
+          at: workspace
+      - run: aws s3 cp ./ s3://$STAGING_BUCKET/ --recursive --exclude "*" --include "*.html" --include "*.jpg" --include "*.ico" --include "*.png" --include "*.png" --include "*.jpg" --include "*.html" --include "*.png" --include "*.css" --include "*.min" --include "*.css" --include "*.svg" --include "*.woff2" --include "*.ttf" --include "*.woff" --include "*.eot" --include "*.txt"
+      
+workflows:
+  version: 2  
+  build-and-deploy:
+    jobs:
+      - build
+      - deploy:
+          requires:
+            - build
+# filters

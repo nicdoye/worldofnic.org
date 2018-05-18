@@ -18,8 +18,8 @@ phases:
   post_build:
     commands:
       - echo Build completed on `date`
-      - aws s3 cp ./ s3://$BUCKET_NAME/ --recursive --exclude "*" --include "*.html" --include "*.jpg" --include "*.ico" --include "*.png" --include "*.png" --include "*.jpg" --include "*.html" --include "*.png" --include "*.css" --include "*.min" --include "*.css" --include "*.svg" --include "*.woff2" --include "*.ttf" --include "*.woff" --include "*.eot" --include "*.txt"
+- aws s3 cp ./ s3://$BUCKET_NAME/ --recursive --exclude "*" --include "*.html" --include "*.jpg" --include "*.ico" --include "*.png" --include "*.png" --include "*.jpg" --include "*.html" --include "*.png" --include "*.css" --include "*.min" --include "*.css" --include "*.svg" --include "*.woff2" --include "*.ttf" --include "*.woff" --include "*.eot" --include "*.txt"
 #artifacts:
-#  files:
+#  files:      
 #    - '**/*'
 #  base-directory: public
